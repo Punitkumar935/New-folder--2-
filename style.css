@@ -1,80 +1,258 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    font-family:Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
-    user-select: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width:100%;
+    background:url(nature3.jpeg);
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+}
+.navbar {
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+    position: sticky;
+    top: 0;
+}
+.icon {
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+.logo {
+    color:orangered;
+    font-size: 35px;
+    font-family: Arial;
+    padding-top: 20px;
+}
+
+.menu {
+  width: 400px;
+  float: left;
+  height: 70px;
 
 }
-body{
-    height: 100vh;
-    background: tomato;
-    display: grid;
-}
-.container{
-    width:100%;
-    height:100%;
+
+ul{
+    float: left;
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.calculator{
-    background: #023e7d;
-    padding:10px;
-    box-sizing: 0px 0px 10px 3px  rgba(0, 0, 0, 0.219);
-    margin: auto;
-    border-radius: 10px;
-}
-.calculator form input {
-    border:0;
-    outline:0;
-    width: 60px;
-    height: 60px;
-    border-radius: 10px;
-    font-family: Nunito;
-    font-weight: 700;
-    font-size: 1.7em;
-    color: tomato;
-    cursor: pointer;
-    margin: 10px;
+
+ul li{
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
+    font-size: 14px;
     
 }
-.calculator from input.numpadBtns{
- background:#012a4a; 
 
-}
-form .display{
-    display: flex;
-    justify-content: flex-end;
-    margin:20px 0;
-}
- form .display input{
-    text-align: right;
-    flex:2;
-    font-size:45px;
-    box-shadow: none;
-    padding: 20px;
-    box-sizing: border-box;
-    background:forestgreen;
-    box-shadow: 0 0 10px 3px #00000033;
-    height: 80px;
+ul li a{
+    text-decoration: none;
     color:white;
+    font-family: Arial;
+    font-weight: bold;
+    transition: o.4s ease-in-out;
 }
- form input.equal{
-    width:145px;
-    background:forestgreen;
+
+ul li a:hover {
+    color: orangered;
+}
+.search{
+ width: 330px;
+ float: left;
+ margin-left: 270px;
+}
+
+.srch{
+    font-family: 'Times New Roman';
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid gold;
+    margin-top: 15px;
+    color: aliceblue;
+    border-radius: none;
+    font-size: 20px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 20px;
+
+}
+
+.btn{
+    width: 100px;
+    height: 40px;
+    background:orange;
+    border: 3px solid grey;
+    margin-top: 20px;
+    color: white;
+    font-size: 15px;
+    border-bottom-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    
+}
+
+.btn:focus{
+    outline: none;
+}
+
+.srch:focus{
+    outline: none;
+}
+
+.content {
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: white;
+    position: relative;
+    margin-top: 120px;
+}
+.content .per{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 2.5px;
+    line-height: 30px;
+}
+
+
+.content .h1{
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left:20px;
+    margin-top: 50px;
+    letter-spacing: 2px;
+
+}
+
+.content .cn{
+    width: 160px;
+    height: 40px;
+    background: orangered;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor:pointer;
+}
+
+.content .cn a{
+    text-decoration: none;
+    color: #000;
+}
+
+.cn:hover{
+    background-color: white;
+}
+
+.content span{
+    color: orange;
+    font-size: 60px;
+}
+
+.from{
+    width: 250px;
+    height: 380px;
+    background: linear-gradient(to top, rgb(0,0,0,0.8)50%, rgb(0,0,0,0.8)50%);
+    position: absolute;
+    top:-20px;
+    left:870px;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.from h2{
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: orangered;
+    font-size: 23px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+}
+
+.from input{
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid orange;
+    border-top:none;
+    border-right: none;
+    border-left: none;
+    color: white;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+
+.from input:focus{
+    outline: none;
+}
+
+::placeholder{
+    color: white;
+    font-family: Arial;
+}
+
+.btnn{
+    width: 240px;
+    height: 40px;
+    background: orangered;
+    border: none;
+    margin-top:30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+.btnn :hover{
+    background: #fff;
+    color:#ff7200;
+}
+
+.btnn a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+
+}
+
+.from .link{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 20px;
+    text-align: center;
+}
+ .from .link a{
+    text-decoration: none;
+    color: orange;
  }
-  form input.ac,form input.del{
-    background:#5f0000;
-  }
-  .symbols{
-    background-color:#edae49;
-  }
-  .special{
-    background-color: #248277;
 
-  }
+ .lin{
+    padding-top: 15px;
+    padding-bottom: 10px;
+    text-align: center;
+ }
 
-  .calculator form input:hover{
-    box-shadow: 0px 0px 5px 3px #00000025;
-  }
-
-
+ .icom{
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+ }
+ .icom a img {
+    border-radius: 50%;
+    height: 40px;
+    display: flex;
+    justify-content: space-around; 
+ }
